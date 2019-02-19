@@ -5,7 +5,7 @@
 2. numpy
 3. pandas
 
-# How to USe
+# How to Use
 1. Copy your data(.csv) to this folder
 2. Run cut_data.py
 3. Run train.py
