@@ -4,7 +4,13 @@ import numpy as np
 
 tempp = []
 
-for number in range(100):
+Row = int(input("Row to Predict : "))
+sorce = input("Sorce File(.csv) : ")
+
+src = pre.d(sorce)
+
+
+for number in range(1000000):
 
     #number = int(input('Number of Jump : '))
 
@@ -15,7 +21,9 @@ for number in range(100):
 
     #print(data[len(data)-number-1:len(data)-1])
 
-    for i in range(1326):
+    
+
+    for i in range(Row):
         #print (ans[data[len(data)-number-1:len(data)-1]])
         try:
             data+=ans[data[len(data)-number-1:len(data)-1]]
@@ -24,7 +32,7 @@ for number in range(100):
 
     #print(data)
 
-    src = pre.d("AAPL.csv")
+    src = pre.d(sorce)
 
     percent = 0
 
@@ -37,7 +45,7 @@ for number in range(100):
     if percent == 1 :
         break
 
-    print(percent)
+    print("Number =",number,percent)
 
     tempp.append(percent)
 
